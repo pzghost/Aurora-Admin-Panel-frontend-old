@@ -16,7 +16,7 @@ function App() {
         <Banner />
         <Switch>
           <Route path="/login" component={Login} />
-          <Route path="/create-account" component={CreateAccount} />
+          {/* <Route path="/create-account" component={CreateAccount} /> */}
           <Route path="/forgot-password" component={ForgotPassword} />
 
           {/* Place new routes over this */}
