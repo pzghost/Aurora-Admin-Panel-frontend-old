@@ -22,14 +22,8 @@ RUN yarn build
 # Stage 2: Setup the Nginx server
 FROM nginx:1.20-alpine
 
-# Set working directory
-WORKDIR /usr/share/nginx/html
-
-# Remove default nginx static assets
-RUN rm -rf ./*
-
 # Copy static assets from builder stage
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/build /var/www/html
 
 # Optional: Copy your nginx configuration file
 ADD nginx-prod.conf /etc/nginx/conf.d/default.conf
