@@ -80,12 +80,12 @@ function Login() {
                 </Link>
               </p>
               <p className="mt-1"> */}
-                <Link
+              {/* <Link
                   className="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
                   to="/create-account"
                 >
                   Create account
-                </Link>
+                </Link> */}
               </p>
             </form>
           </main>
